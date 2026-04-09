@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # -----------------------------
-# UI styling (WHITE THEME)
+# UI styling
 # -----------------------------
 st.markdown(
     """
@@ -34,6 +34,7 @@ st.markdown(
         border: 1px solid #e5e7eb;
         padding: 16px;
         border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
     div.stAlert {
@@ -49,6 +50,28 @@ st.markdown(
     h1, h2, h3 {
         color: #111827;
         letter-spacing: -0.02em;
+    }
+
+    .info-card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 18px 18px 16px 18px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+        min-height: 110px;
+    }
+
+    .info-card-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 8px;
+    }
+
+    .info-card-text {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        color: #374151;
     }
     </style>
     """,
@@ -158,9 +181,45 @@ st.markdown(
 )
 
 info_col1, info_col2, info_col3 = st.columns(3)
-info_col1.info("**Purpose**\nEvaluate borrower-level credit risk using transparent scorecard logic.")
-info_col2.info("**Designed for**\nAnalytics demos, underwriting concepts, and portfolio decision support.")
-info_col3.info("**Output**\nRisk metrics, grade assignment, and a recommendation aligned to policy.")
+
+with info_col1:
+    st.markdown(
+        """
+        <div class="info-card">
+            <div class="info-card-title">Purpose</div>
+            <div class="info-card-text">
+                Evaluate borrower-level credit risk using transparent scorecard logic.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with info_col2:
+    st.markdown(
+        """
+        <div class="info-card">
+            <div class="info-card-title">Designed for</div>
+            <div class="info-card-text">
+                Analytics demos, underwriting concepts, and portfolio decision support.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with info_col3:
+    st.markdown(
+        """
+        <div class="info-card">
+            <div class="info-card-title">Output</div>
+            <div class="info-card-text">
+                Risk metrics, grade assignment, and a recommendation aligned to policy.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 if show_methodology:
     st.markdown("### Methodology")
