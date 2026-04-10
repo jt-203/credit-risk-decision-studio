@@ -1,9 +1,9 @@
 # Credit Risk Decision Studio
 
-🔗 Live App: [https://your-streamlit-link.streamlit.app](https://credit-risk-decision-studio-utc5sum2r55xsfimkypspu.streamlit.app/)
+🔗 Live App: https://credit-risk-decision-studio-utc5sum2r55xsfimkypspu.streamlit.app/
 # Credit Risk Decision Studio
 
-🔗 Live App: [https://your-streamlit-link.streamlit.app](https://credit-risk-decision-studio-utc5sum2r55xsfimkypspu.streamlit.app/)
+🔗 Live App: [[https://your-streamlit-link.streamlit.app](https://credit-risk-decision-studio-utc5sum2r55xsfimkypspu.streamlit.app/)](https://credit-risk-decision-studio-utc5sum2r55xsfimkypspu.streamlit.app/)
 
 ---
 
